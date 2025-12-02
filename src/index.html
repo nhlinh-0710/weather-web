@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Google Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <script src="script.js" defer></script>
+</head>
+<body>  
+    <main class="main-container">
+        <header class="input-container">
+            <input id="city-input" class="city-input" placeholder="Search City" type="text">
+            <button class="search-btn">  
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </header>
+        
+        <div class="weather-container">
+            <div class="weather-icon-container">
+                <img id="weather-icon" src="" alt="Weather Icon" class="weather-icon">
+            </div>
+            
+            <div class="weather-info">
+                <div class="temperature">
+                    <span id="temperature">--</span>
+                    <span class="unit">°C</span>
+                </div>
+                <div class="description" id="description">--</div>
+                <div class="city-name" id="city-name">--</div>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="detail-label">Humidity</span>
+                    <span class="detail-value" id="humidity">--%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Wind Speed</span>
+                    <span class="detail-value" id="wind-speed">-- km/h</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="message-container" id="message-container" style="display: none;">
+            <img id="message-image" src="" alt="Message" class="message-image">
+            <p id="message-text" class="message-text"></p>
+        </div>
+    </main>
+</body>     
+</html>
